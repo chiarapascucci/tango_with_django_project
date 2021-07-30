@@ -1,5 +1,5 @@
 from django.contrib import admin
-from rango.models import Category, Page
+from rango.models import Category, Page, UserProfile
 
 class PageInLine(admin.TabularInline):
     model = Page
@@ -23,5 +23,6 @@ class PageAdmin(admin.ModelAdmin):
 
 admin.site.register(Page, PageAdmin)
 
+admin.site.register(UserProfile)
 
 # Register your models here.
